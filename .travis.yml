@@ -1,0 +1,7 @@
+language: objective-c
+xcode_project: NTYCSVTable.xcodeproj
+xcode_scheme: NTYCSVTableTests
+xcode_sdk: iphonesimulator7.0
+
+before_install:
+  - gem install cocoapods
