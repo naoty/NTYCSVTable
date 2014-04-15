@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = "NTYCSVTable"
   s.version          = "0.1.0"
-  s.summary          = "CSV parser for Objective-C inspired by `CSV::Table` class of Ruby."
+  s.summary          = "CSV parser for Objective-C inspired by CSV::Table class of Ruby."
   s.description      = <<-DESC
-                       CSV parser for Objective-C inspired by `CSV::Table` class of Ruby.
+                       CSV parser for Objective-C inspired by CSV::Table class of Ruby.
                        You can access CSV data by rows and columns like table.
                        DESC
   s.homepage         = "https://github.com/naoty/NTYCSVTable"
