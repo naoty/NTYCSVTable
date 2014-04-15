@@ -12,6 +12,7 @@
 
 @property (nonatomic, readonly) NSArray *headers;
 @property (nonatomic, readonly) NSArray *rows;
+@property (nonatomic, readonly) NSDictionary *columns;
 
 - (id)initWithContentsOfURL:(NSURL *)url;
 

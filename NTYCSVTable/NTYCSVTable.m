@@ -12,6 +12,7 @@
 @interface NTYCSVTable ()
 @property (nonatomic) NSArray *headers;
 @property (nonatomic) NSArray *rows;
+@property (nonatomic) NSDictionary *columns;
 @end
 
 @implementation NTYCSVTable
@@ -25,6 +26,7 @@
         NSArray *lines = [csvString componentsSeparatedByString:@"\n"];
         [self parseHeadersFromLines:lines];
         [self parseRowsFromLines:lines];
+        [self parseColumnsFromLines:lines];
     }
     return self;
 }
@@ -46,20 +48,33 @@
             continue;
         }
         
-        NSArray *cells = [line componentsSeparatedByString:@","];
+        NSArray *values = [line componentsSeparatedByString:@","];
         NSMutableDictionary *row = [NSMutableDictionary new];
         for (NSString *header in self.headers) {
             NSUInteger index = [self.headers indexOfObject:header];
-            NSString *cell = cells[index];
-            if ([cell isDigit]) {
-                row[header] = [NSNumber numberWithInt:cell.intValue];
+            NSString *value = values[index];
+            if ([value isDigit]) {
+                row[header] = [NSNumber numberWithInt:value.intValue];
             } else {
-                row[header] = cells[index];
+                row[header] = values[index];
             }
         }
         [rows addObject:[NSDictionary dictionaryWithDictionary:row]];
     }
     self.rows = [NSArray arrayWithArray:rows];
+}
+
+- (void)parseColumnsFromLines:(NSArray *)lines
+{
+    NSMutableDictionary *columns = [NSMutableDictionary new];
+    for (NSString *header in self.headers) {
+        NSMutableArray *values = [NSMutableArray new];
+        for (NSDictionary *row in self.rows) {
+            [values addObject:row[header]];
+        }
+        columns[header] = [NSArray arrayWithArray:values];
+    }
+    self.columns = [NSDictionary dictionaryWithDictionary:columns];
 }
 
 @end

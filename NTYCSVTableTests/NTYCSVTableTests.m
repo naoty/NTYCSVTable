@@ -44,4 +44,14 @@
     XCTAssertEqualObjects(self.table.rows, expect, @"");
 }
 
+- (void)testColumns
+{
+    NSDictionary *expect = @{
+        @"id": @[@1, @2, @3],
+        @"name": @[@"Alice", @"Bob", @"Charlie"],
+        @"age": @[@18, @19, @20]
+    };
+    XCTAssertEqualObjects(self.table.columns, expect, @"");
+}
+
 @end
