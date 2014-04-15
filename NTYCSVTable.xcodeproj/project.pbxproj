@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D8FFDCC18FD176100C3BC6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8FFDCB18FD176100C3BC6E /* Foundation.framework */; };
+		3D8FFDDA18FD176200C3BC6E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8FFDD918FD176200C3BC6E /* XCTest.framework */; };
+		3D8FFDDB18FD176200C3BC6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8FFDCB18FD176100C3BC6E /* Foundation.framework */; };
+		3D8FFDDD18FD176200C3BC6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8FFDDC18FD176200C3BC6E /* UIKit.framework */; };
+		3D8FFDE018FD176200C3BC6E /* libNTYCSVTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8FFDC818FD176100C3BC6E /* libNTYCSVTable.a */; };
+		3D8FFE0218FD1E8600C3BC6E /* NTYCSVTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FFE0118FD1E8600C3BC6E /* NTYCSVTable.m */; };
+		3D8FFE0718FD1E9100C3BC6E /* NTYCSVTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FFE0518FD1E9100C3BC6E /* NTYCSVTableTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D8FFDDE18FD176200C3BC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D8FFDC018FD176100C3BC6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D8FFDC718FD176100C3BC6E;
+			remoteInfo = NTYCSVTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D8FFDC618FD176100C3BC6E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D8FFDC818FD176100C3BC6E /* libNTYCSVTable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNTYCSVTable.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8FFDCB18FD176100C3BC6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D8FFDD818FD176200C3BC6E /* NTYCSVTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTYCSVTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8FFDD918FD176200C3BC6E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3D8FFDDC18FD176200C3BC6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3D8FFDFF18FD1E8600C3BC6E /* NTYCSVTable-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NTYCSVTable-Prefix.pch"; sourceTree = "<group>"; };
+		3D8FFE0018FD1E8600C3BC6E /* NTYCSVTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYCSVTable.h; sourceTree = "<group>"; };
+		3D8FFE0118FD1E8600C3BC6E /* NTYCSVTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYCSVTable.m; sourceTree = "<group>"; };
+		3D8FFE0418FD1E9100C3BC6E /* NTYCSVTableTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NTYCSVTableTests-Info.plist"; sourceTree = "<group>"; };
+		3D8FFE0518FD1E9100C3BC6E /* NTYCSVTableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYCSVTableTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D8FFDC518FD176100C3BC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8FFDCC18FD176100C3BC6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D8FFDD518FD176200C3BC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8FFDDA18FD176200C3BC6E /* XCTest.framework in Frameworks */,
+				3D8FFDE018FD176200C3BC6E /* libNTYCSVTable.a in Frameworks */,
+				3D8FFDDD18FD176200C3BC6E /* UIKit.framework in Frameworks */,
+				3D8FFDDB18FD176200C3BC6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D8FFDBF18FD176100C3BC6E = {
+			isa = PBXGroup;
+			children = (
+				3D8FFDFE18FD1E8600C3BC6E /* NTYCSVTable */,
+				3D8FFE0318FD1E9100C3BC6E /* NTYCSVTableTests */,
+				3D8FFDCA18FD176100C3BC6E /* Frameworks */,
+				3D8FFDC918FD176100C3BC6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D8FFDC918FD176100C3BC6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D8FFDC818FD176100C3BC6E /* libNTYCSVTable.a */,
+				3D8FFDD818FD176200C3BC6E /* NTYCSVTableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D8FFDCA18FD176100C3BC6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D8FFDCB18FD176100C3BC6E /* Foundation.framework */,
+				3D8FFDD918FD176200C3BC6E /* XCTest.framework */,
+				3D8FFDDC18FD176200C3BC6E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D8FFDFE18FD1E8600C3BC6E /* NTYCSVTable */ = {
+			isa = PBXGroup;
+			children = (
+				3D8FFDFF18FD1E8600C3BC6E /* NTYCSVTable-Prefix.pch */,
+				3D8FFE0018FD1E8600C3BC6E /* NTYCSVTable.h */,
+				3D8FFE0118FD1E8600C3BC6E /* NTYCSVTable.m */,
+			);
+			path = NTYCSVTable;
+			sourceTree = "<group>";
+		};
+		3D8FFE0318FD1E9100C3BC6E /* NTYCSVTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D8FFE0418FD1E9100C3BC6E /* NTYCSVTableTests-Info.plist */,
+				3D8FFE0518FD1E9100C3BC6E /* NTYCSVTableTests.m */,
+			);
+			path = NTYCSVTableTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D8FFDC718FD176100C3BC6E /* NTYCSVTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D8FFDEB18FD176200C3BC6E /* Build configuration list for PBXNativeTarget "NTYCSVTable" */;
+			buildPhases = (
+				3D8FFDC418FD176100C3BC6E /* Sources */,
+				3D8FFDC518FD176100C3BC6E /* Frameworks */,
+				3D8FFDC618FD176100C3BC6E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTYCSVTable;
+			productName = NTYCSVTable;
+			productReference = 3D8FFDC818FD176100C3BC6E /* libNTYCSVTable.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3D8FFDD718FD176200C3BC6E /* NTYCSVTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D8FFDEE18FD176200C3BC6E /* Build configuration list for PBXNativeTarget "NTYCSVTableTests" */;
+			buildPhases = (
+				3D8FFDD418FD176200C3BC6E /* Sources */,
+				3D8FFDD518FD176200C3BC6E /* Frameworks */,
+				3D8FFDD618FD176200C3BC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D8FFDDF18FD176200C3BC6E /* PBXTargetDependency */,
+			);
+			name = NTYCSVTableTests;
+			productName = NTYCSVTableTests;
+			productReference = 3D8FFDD818FD176200C3BC6E /* NTYCSVTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D8FFDC018FD176100C3BC6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Naoto Kaneko";
+			};
+			buildConfigurationList = 3D8FFDC318FD176100C3BC6E /* Build configuration list for PBXProject "NTYCSVTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D8FFDBF18FD176100C3BC6E;
+			productRefGroup = 3D8FFDC918FD176100C3BC6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D8FFDC718FD176100C3BC6E /* NTYCSVTable */,
+				3D8FFDD718FD176200C3BC6E /* NTYCSVTableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D8FFDD618FD176200C3BC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D8FFDC418FD176100C3BC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8FFE0218FD1E8600C3BC6E /* NTYCSVTable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D8FFDD418FD176200C3BC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8FFE0718FD1E9100C3BC6E /* NTYCSVTableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D8FFDDF18FD176200C3BC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D8FFDC718FD176100C3BC6E /* NTYCSVTable */;
+			targetProxy = 3D8FFDDE18FD176200C3BC6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D8FFDE918FD176200C3BC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D8FFDEA18FD176200C3BC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D8FFDEC18FD176200C3BC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NTYCSVTable.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTYCSVTable/NTYCSVTable-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3D8FFDED18FD176200C3BC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NTYCSVTable.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTYCSVTable/NTYCSVTable-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3D8FFDEF18FD176200C3BC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTYCSVTable/NTYCSVTable-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NTYCSVTableTests/NTYCSVTableTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3D8FFDF018FD176200C3BC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTYCSVTable/NTYCSVTable-Prefix.pch";
+				INFOPLIST_FILE = "NTYCSVTableTests/NTYCSVTableTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D8FFDC318FD176100C3BC6E /* Build configuration list for PBXProject "NTYCSVTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D8FFDE918FD176200C3BC6E /* Debug */,
+				3D8FFDEA18FD176200C3BC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D8FFDEB18FD176200C3BC6E /* Build configuration list for PBXNativeTarget "NTYCSVTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D8FFDEC18FD176200C3BC6E /* Debug */,
+				3D8FFDED18FD176200C3BC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D8FFDEE18FD176200C3BC6E /* Build configuration list for PBXNativeTarget "NTYCSVTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D8FFDEF18FD176200C3BC6E /* Debug */,
+				3D8FFDF018FD176200C3BC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D8FFDC018FD176100C3BC6E /* Project object */;
+}
