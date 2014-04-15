@@ -10,4 +10,9 @@
 
 @interface NTYCSVTable : NSObject
 
+@property (nonatomic, readonly) NSArray *headers;
+@property (nonatomic, readonly) NSArray *rows;
+
+- (id)initWithContentsOfURL:(NSURL *)url;
+
 @end

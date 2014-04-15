@@ -14,6 +14,9 @@
 		3D8FFDE018FD176200C3BC6E /* libNTYCSVTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8FFDC818FD176100C3BC6E /* libNTYCSVTable.a */; };
 		3D8FFE0218FD1E8600C3BC6E /* NTYCSVTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FFE0118FD1E8600C3BC6E /* NTYCSVTable.m */; };
 		3D8FFE0718FD1E9100C3BC6E /* NTYCSVTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FFE0518FD1E9100C3BC6E /* NTYCSVTableTests.m */; };
+		3D8FFE0918FD20B200C3BC6E /* sample.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3D8FFE0818FD20B200C3BC6E /* sample.csv */; };
+		3D91811318FD364900203493 /* NSString+NTYDigitHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91811218FD364900203493 /* NSString+NTYDigitHandling.m */; };
+		3D91811418FD377500203493 /* NSString+NTYDigitHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91811218FD364900203493 /* NSString+NTYDigitHandling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		3D8FFE0118FD1E8600C3BC6E /* NTYCSVTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYCSVTable.m; sourceTree = "<group>"; };
 		3D8FFE0418FD1E9100C3BC6E /* NTYCSVTableTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NTYCSVTableTests-Info.plist"; sourceTree = "<group>"; };
 		3D8FFE0518FD1E9100C3BC6E /* NTYCSVTableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYCSVTableTests.m; sourceTree = "<group>"; };
+		3D8FFE0818FD20B200C3BC6E /* sample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.csv; sourceTree = "<group>"; };
+		3D91811118FD364900203493 /* NSString+NTYDigitHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NTYDigitHandling.h"; sourceTree = "<group>"; };
+		3D91811218FD364900203493 /* NSString+NTYDigitHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NTYDigitHandling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +112,11 @@
 		3D8FFDFE18FD1E8600C3BC6E /* NTYCSVTable */ = {
 			isa = PBXGroup;
 			children = (
-				3D8FFDFF18FD1E8600C3BC6E /* NTYCSVTable-Prefix.pch */,
 				3D8FFE0018FD1E8600C3BC6E /* NTYCSVTable.h */,
 				3D8FFE0118FD1E8600C3BC6E /* NTYCSVTable.m */,
+				3D91811118FD364900203493 /* NSString+NTYDigitHandling.h */,
+				3D91811218FD364900203493 /* NSString+NTYDigitHandling.m */,
+				3D8FFDFF18FD1E8600C3BC6E /* NTYCSVTable-Prefix.pch */,
 			);
 			path = NTYCSVTable;
 			sourceTree = "<group>";
@@ -116,8 +124,9 @@
 		3D8FFE0318FD1E9100C3BC6E /* NTYCSVTableTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D8FFE0418FD1E9100C3BC6E /* NTYCSVTableTests-Info.plist */,
 				3D8FFE0518FD1E9100C3BC6E /* NTYCSVTableTests.m */,
+				3D8FFE0418FD1E9100C3BC6E /* NTYCSVTableTests-Info.plist */,
+				3D8FFE0818FD20B200C3BC6E /* sample.csv */,
 			);
 			path = NTYCSVTableTests;
 			sourceTree = "<group>";
@@ -192,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8FFE0918FD20B200C3BC6E /* sample.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D91811318FD364900203493 /* NSString+NTYDigitHandling.m in Sources */,
 				3D8FFE0218FD1E8600C3BC6E /* NTYCSVTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D91811418FD377500203493 /* NSString+NTYDigitHandling.m in Sources */,
 				3D8FFE0718FD1E9100C3BC6E /* NTYCSVTableTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +384,7 @@
 				3D8FFDED18FD176200C3BC6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D8FFDEE18FD176200C3BC6E /* Build configuration list for PBXNativeTarget "NTYCSVTableTests" */ = {
 			isa = XCConfigurationList;
@@ -380,6 +393,7 @@
 				3D8FFDF018FD176200C3BC6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
