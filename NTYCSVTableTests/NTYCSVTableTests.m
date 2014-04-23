@@ -54,4 +54,22 @@
     XCTAssertEqualObjects(self.table.columns, expect, @"");
 }
 
+- (void)testRowsOfValuesForHeader
+{
+    NSArray *actual;
+    NSArray *expect;
+    
+    actual = [self.table rowsOfValue:@20 forHeader:@"age"];
+    expect = @[
+        @{@"id": @3, @"name": @"Charlie", @"age": @20}
+    ];
+    XCTAssertEqualObjects(actual, expect, @"");
+    
+    actual = [self.table rowsOfValue:@"Bob" forHeader:@"name"];
+    expect = @[
+        @{@"id": @2, @"name": @"Bob", @"age": @19}
+    ];
+    XCTAssertEqualObjects(actual, expect, @"");
+}
+
 @end

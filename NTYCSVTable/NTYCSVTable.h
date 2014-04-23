@@ -15,5 +15,6 @@
 @property (nonatomic, readonly) NSDictionary *columns;
 
 - (id)initWithContentsOfURL:(NSURL *)url;
+- (NSArray *)rowsOfValue:(id)value forHeader:(NSString *)header;
 
 @end

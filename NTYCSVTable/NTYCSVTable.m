@@ -31,6 +31,16 @@
     return self;
 }
 
+- (NSArray *)rowsOfValue:(id)value forHeader:(NSString *)header
+{
+    NSPredicate *predicate = [NSComparisonPredicate predicateWithLeftExpression:[NSExpression expressionForKeyPath:header]
+                                                                rightExpression:[NSExpression expressionForConstantValue:value]
+                                                                       modifier:NSDirectPredicateModifier
+                                                                           type:NSEqualToPredicateOperatorType
+                                                                        options:0];
+    return [self.rows filteredArrayUsingPredicate:predicate];
+}
+
 #pragma mark - Private methods
 
 - (void)parseHeadersFromLines:(NSArray *)lines

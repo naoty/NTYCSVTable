@@ -41,3 +41,10 @@ NSDictionary *columns = table.columns;
 NSArray *names = table.columns[@"name"]; //=> @[@"Alice", @"Bob", @"Charlie"]
 NSArray *ages = table.columns[@"age"];   //=> @[@18, @19, @20]
 ```
+
+Also, you can find rows which have a specified value for a specified header like this.
+
+```objectice-c
+NSArray *rows = [table rowsOfValue:@1 forHeader:@"id"];  //=> @[@{@"id": @1, @"name": @"Alice", @"age": @18}]
+NSArrya *rows = [table rowsOfValue:@20 forHeader:@"age"] //=> @[@{@"id": @3, @"name": @"Charlie", @"age": @20}]
+```
