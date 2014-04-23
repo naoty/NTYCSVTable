@@ -1,5 +1,5 @@
 //
-//  NSString+NTYDigitHandling.h
+//  NSString+NTYNonStringHandling.h
 //  NTYCSVTable
 //
 //  Created by Naoto Kaneko on 2014/04/15.
@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (NTYDigitHandling)
+@interface NSString (NTYNonStringHandling)
 
 - (BOOL)isDigit;
+- (BOOL)isBoolean;
 
 @end

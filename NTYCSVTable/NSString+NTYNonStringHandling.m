@@ -1,21 +1,26 @@
 //
-//  NSString+NTYDigitHandling.m
+//  NSString+NTYNonStringHandling.m
 //  NTYCSVTable
 //
 //  Created by Naoto Kaneko on 2014/04/15.
 //  Copyright (c) 2014 Naoto Kaneko. All rights reserved.
 //
 
-#import "NSString+NTYDigitHandling.h"
+#import "NSString+NTYNonStringHandling.h"
 
-@implementation NSString (NTYDigitHandling)
+@implementation NSString (NTYNonStringHandling)
 
 static NSCharacterSet *digitCharacterSet = nil;
+static NSArray *booleanStrings = nil;
 
 + (void)load
 {
     if (!digitCharacterSet) {
         digitCharacterSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+    }
+    
+    if (!booleanStrings) {
+        booleanStrings = @[@"YES", @"NO", @"yes", @"no", @"TRUE", @"FALSE", @"true", @"false"];
     }
 }
 
@@ -25,6 +30,11 @@ static NSCharacterSet *digitCharacterSet = nil;
     scanner.charactersToBeSkipped = NO;
     [scanner scanCharactersFromSet:digitCharacterSet intoString:NULL];
     return scanner.isAtEnd;
+}
+
+- (BOOL)isBoolean
+{
+    return [booleanStrings containsObject:self];
 }
 
 @end

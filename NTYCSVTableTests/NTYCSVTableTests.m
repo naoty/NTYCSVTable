@@ -30,16 +30,16 @@
 
 - (void)testHeaders
 {
-    NSArray *expect = @[@"id", @"name", @"age"];
+    NSArray *expect = @[@"id", @"name", @"age", @"adult"];
     XCTAssertEqualObjects(self.table.headers, expect, @"");
 }
 
 - (void)testRows
 {
     NSArray *expect = @[
-        @{@"id": @1, @"name": @"Alice", @"age": @18},
-        @{@"id": @2, @"name": @"Bob", @"age": @19},
-        @{@"id": @3, @"name": @"Charlie", @"age": @20}
+        @{@"id": @1, @"name": @"Alice", @"age": @18, @"adult": @NO},
+        @{@"id": @2, @"name": @"Bob", @"age": @19, @"adult": @NO},
+        @{@"id": @3, @"name": @"Charlie", @"age": @20, @"adult": @YES}
     ];
     XCTAssertEqualObjects(self.table.rows, expect, @"");
 }
@@ -49,7 +49,8 @@
     NSDictionary *expect = @{
         @"id": @[@1, @2, @3],
         @"name": @[@"Alice", @"Bob", @"Charlie"],
-        @"age": @[@18, @19, @20]
+        @"age": @[@18, @19, @20],
+        @"adult": @[@NO, @NO, @YES]
     };
     XCTAssertEqualObjects(self.table.columns, expect, @"");
 }
@@ -61,13 +62,13 @@
     
     actual = [self.table rowsOfValue:@20 forHeader:@"age"];
     expect = @[
-        @{@"id": @3, @"name": @"Charlie", @"age": @20}
+        @{@"id": @3, @"name": @"Charlie", @"age": @20, @"adult": @YES}
     ];
     XCTAssertEqualObjects(actual, expect, @"");
     
     actual = [self.table rowsOfValue:@"Bob" forHeader:@"name"];
     expect = @[
-        @{@"id": @2, @"name": @"Bob", @"age": @19}
+        @{@"id": @2, @"name": @"Bob", @"age": @19, @"adult": @NO}
     ];
     XCTAssertEqualObjects(actual, expect, @"");
 }

@@ -7,7 +7,7 @@
 //
 
 #import "NTYCSVTable.h"
-#import "NSString+NTYDigitHandling.h"
+#import "NSString+NTYNonStringHandling.h"
 
 @interface NTYCSVTable ()
 @property (nonatomic) NSArray *headers;
@@ -65,6 +65,8 @@
             NSString *value = values[index];
             if ([value isDigit]) {
                 row[header] = [NSNumber numberWithInt:value.intValue];
+            } else if ([value isBoolean]) {
+                row[header] = [NSNumber numberWithBool:value.boolValue];
             } else {
                 row[header] = values[index];
             }
