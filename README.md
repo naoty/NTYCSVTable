@@ -44,7 +44,7 @@ NSArray *ages = table.columns[@"age"];   //=> @[@18, @19, @20]
 
 Also, you can find rows which have a specified value for a specified header like this.
 
-```objectice-c
-NSArray *rows = [table rowsOfValue:@1 forHeader:@"id"];  //=> @[@{@"id": @1, @"name": @"Alice", @"age": @18}]
-NSArrya *rows = [table rowsOfValue:@20 forHeader:@"age"] //=> @[@{@"id": @3, @"name": @"Charlie", @"age": @20}]
+```objective-c
+[table rowsOfValue:@1 forHeader:@"id"];  //=> @[@{@"id": @1, @"name": @"Alice", @"age": @18}]
+[table rowsOfValue:@20 forHeader:@"age"] //=> @[@{@"id": @3, @"name": @"Charlie", @"age": @20}]
 ```
