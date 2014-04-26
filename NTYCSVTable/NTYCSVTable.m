@@ -13,14 +13,15 @@
 @property (nonatomic) NSArray *headers;
 @property (nonatomic) NSArray *rows;
 @property (nonatomic) NSDictionary *columns;
+@property (nonatomic) NSString *columnSeperator;
 @end
 
 @implementation NTYCSVTable
 
-- (id)initWithContentsOfURL:(NSURL *)url
-{
+- (id)initWithContentsOfURL:(NSURL *)url columnSeparator:(NSString *)separator {
     self = [super init];
     if (self) {
+        self.columnSeperator = separator;
         NSString *csvString = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
         csvString = [csvString stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
         NSArray *lines = [csvString componentsSeparatedByString:@"\n"];
@@ -29,6 +30,11 @@
         [self parseColumnsFromLines:lines];
     }
     return self;
+}
+
+- (id)initWithContentsOfURL:(NSURL *)url
+{
+    return [self initWithContentsOfURL:url columnSeparator:@","];
 }
 
 - (NSArray *)rowsOfValue:(id)value forHeader:(NSString *)header
@@ -46,7 +52,7 @@
 - (void)parseHeadersFromLines:(NSArray *)lines
 {
     NSString *headerLine = lines.firstObject;
-    self.headers = [headerLine componentsSeparatedByString:@","];
+    self.headers = [headerLine componentsSeparatedByString:self.columnSeperator];
 }
 
 - (void)parseRowsFromLines:(NSArray *)lines
@@ -58,7 +64,7 @@
             continue;
         }
         
-        NSArray *values = [line componentsSeparatedByString:@","];
+        NSArray *values = [line componentsSeparatedByString:self.columnSeperator];
         NSMutableDictionary *row = [NSMutableDictionary new];
         for (NSString *header in self.headers) {
             NSUInteger index = [self.headers indexOfObject:header];
