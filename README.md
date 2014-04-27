@@ -48,3 +48,12 @@ Also, you can find rows which have a specified value for a specified header like
 [table rowsOfValue:@1 forHeader:@"id"];  //=> @[@{@"id": @1, @"name": @"Alice", @"age": @18}]
 [table rowsOfValue:@20 forHeader:@"age"] //=> @[@{@"id": @3, @"name": @"Charlie", @"age": @20}]
 ```
+
+### Other formats
+
+You can parse other formats such as TSV by using `initWithContentsOfURL:columnSeparator:`.
+
+```objective-c
+NSURL *tsvURL = [NSURL URLWithString:@"users.tsv"];
+NTYCSVTable *table = [[NTYCSVTable alloc] initWithContentsOfURL:tsvURL columnSeparator:@"\t"];
+```
