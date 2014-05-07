@@ -70,7 +70,7 @@
             NSUInteger index = [self.headers indexOfObject:header];
             NSString *value = values[index];
             if ([value isDigit]) {
-                row[header] = [NSNumber numberWithInt:value.intValue];
+                row[header] = [NSNumber numberWithLongLong:value.longLongValue];
             } else if ([value isBoolean]) {
                 row[header] = [NSNumber numberWithBool:value.boolValue];
             } else {
