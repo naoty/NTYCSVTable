@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NTYCSVTable"
-  s.version          = "0.3.0"
+  s.version          = "0.3.1"
   s.summary          = "CSV parser for Objective-C inspired by CSV::Table class of Ruby."
   s.description      = <<-DESC
                        CSV parser for Objective-C inspired by CSV::Table class of Ruby.
