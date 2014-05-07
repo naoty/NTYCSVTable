@@ -1,7 +1,8 @@
 language: objective-c
-xcode_project: NTYCSVTable.xcodeproj
-xcode_scheme: NTYCSVTableTests
-xcode_sdk: iphonesimulator7.0
 
 before_install:
-  - gem install cocoapods
+  - brew update
+  - brew upgrade xctool
+
+script:
+  - xctool -project NTYCSVTable.xcodeproj -scheme NTYCSVTableTests -sdk iphonesimulator7.0 ONLY_ACTIVE_ARCH=NO clean build test
