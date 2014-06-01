@@ -28,7 +28,7 @@ you can access data by rows and columns like this.
 
 ```objective-c
 NSURL *csvURL = [NSURL URLWithString:@"users.csv"];
-NTYCSVTable *table = [NTYCSVTable alloc] initWithContentsOfURL:csvURL];
+NTYCSVTable *table = [[NTYCSVTable alloc] initWithContentsOfURL:csvURL];
 
 // Rows
 NSArray *rows = table.rows;
