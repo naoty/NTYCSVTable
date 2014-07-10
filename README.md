@@ -1,8 +1,8 @@
 # NTYCSVTable
 
-[![Version](http://cocoapod-badges.herokuapp.com/v/NTYCSVTable/badge.png)](http://cocoadocs.org/docsets/NTYCSVTable)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/NTYCSVTable/badge.png)](http://cocoadocs.org/docsets/NTYCSVTable)
-[![Build Status](https://travis-ci.org/naoty/NTYCSVTable.svg?branch=master)](https://travis-ci.org/naoty/NTYCSVTable)
+[![Version](http://img.shields.io/cocoapods/v/NTYCSVTable.svg?style=flat)](http://cocoadocs.org/docsets/NTYCSVTable)
+[![Platform](http://img.shields.io/cocoapods/p/NTYCSVTable.svg?style=flat)](http://cocoadocs.org/docsets/NTYCSVTable)
+[![Build Status](http://img.shields.io/travis/naoty/NTYCSVTable/master.svg?style=flat)](https://travis-ci.org/naoty/NTYCSVTable)
 
 ## Installation
 
